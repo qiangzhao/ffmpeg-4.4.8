@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Mon Sep 21 02:44:56 UTC 2026 - Cliff Zhao <qzhao@suse.com>
+
+- Add ffmpeg-4-CVE-2026-75141.patch:
+  Backport acf5d7cd from upstream, avformat/hevc: reject hvcC
+  NAL arrays that overflow the 16-bit count.
+  (CVE-2026-75141, bsc#1276407)
+
+-------------------------------------------------------------------
 Fri Sep 11 12:54:08 UTC 2026 - Cliff Zhao <qzhao@suse.com>
 
 - Add ffmpeg-4-CVE-2026-38350-part02-c44d237.patch:
@@ -190,7 +198,7 @@ Fri Jun 26 08:19:18 UTC 2026 - Jan Engelhardt <jengelh@inai.de>
   * swscale/alphablend: don't overread alpha plane on subsampled odd size.
     (CVE-2026-38347, bsc#1277373)
   * avformat/hls: check return value of new_init_section().
-    (CVE-2023-6603, bsc#1220547)  
+    (CVE-2023-6603, bsc#1220547)
 - Delete ffmpeg-4-CVE-2025-22921.patch (merged)
 
 -------------------------------------------------------------------
@@ -278,7 +286,7 @@ Wed Oct 15 02:12:04 UTC 2025 - SongChuan Kang <sckang@suse.com>
 -------------------------------------------------------------------
 Tue Oct  7 12:34:56 UTC 2025 - olaf@aepfle.de
 
-- add missing closing brace to ffmpeg-4-CVE-2025-7700.patch 
+- add missing closing brace to ffmpeg-4-CVE-2025-7700.patch
 
 -------------------------------------------------------------------
 Mon Sep 29 07:25:31 UTC 2025 - Jan Engelhardt <jengelh@inai.de>
